@@ -38,6 +38,32 @@ a {
 .text-gold {
   color: var(--gold);
 }
+
+
+/* cursor */
+
+.cursor-tail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--blue);
+  pointer-events: none;
+  z-index: 99999;
+  opacity: 0.8;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+}
+
+@media (hover: none), (prefers-reduced-motion: reduce) {
+  .cursor-tail {
+    display: none;
+  }
+}
+
+
 .progress-bar-top {
   position: fixed;
   top: 0;

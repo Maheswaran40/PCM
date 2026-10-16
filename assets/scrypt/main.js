@@ -199,3 +199,60 @@ Service Required: ${service}`;
 
   window.open(whatsappURL, "_blank");
 }
+
+
+
+// cursor
+
+  if (
+    window.matchMedia("(hover: hover) and (pointer: fine)").matches &&
+    !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  ) {
+    const count = 12;
+    const dots = [];
+    const mouse = { x: -100, y: -100 };
+
+    for (let i = 0; i < count; i++) {
+      const dot = document.createElement("div");
+      dot.className = "cursor-tail";
+
+      const size = 10 - (i / count) * 8;
+
+      dot.style.width = size + "px";
+      dot.style.height = size + "px";
+      dot.style.opacity = 1 - i / count;
+
+      document.body.appendChild(dot);
+
+      dots.push({
+        element: dot,
+        x: -100,
+        y: -100
+      });
+    }
+
+    window.addEventListener("mousemove", (e) => {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+    });
+
+    function animate() {
+      let targetX = mouse.x;
+      let targetY = mouse.y;
+
+      dots.forEach((dot) => {
+        dot.x += (targetX - dot.x) * 0.35;
+        dot.y += (targetY - dot.y) * 0.35;
+
+        dot.element.style.transform =
+          `translate3d(${dot.x}px, ${dot.y}px, 0) translate(-50%, -50%)`;
+
+        targetX = dot.x;
+        targetY = dot.y;
+      });
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  }
