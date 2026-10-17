@@ -13,6 +13,13 @@
       rel="stylesheet"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
       rel="stylesheet"
     />
@@ -21,6 +28,11 @@
       rel="stylesheet"
     />
     <link href="../style/style.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="../images/pcm-fav.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <div class="progress-bar-top" id="scrollProgress"></div>
@@ -28,10 +40,12 @@
       <div
         class="container d-flex justify-content-between align-items-center gap-2"
       >
-        <span
+        <span class="header"
           ><i class="bi bi-geo-alt"></i> Singapore employment &amp; recruitment
           services</span
-        ><a href="contact.html">Contact Us <i class="bi bi-arrow-right"></i></a>
+        ><a href="" class="text-light header"
+          ><i class="fa-regular fa-envelope"></i> Mail Us
+        </a>
       </div>
     </div>
     <nav
@@ -40,17 +54,25 @@
       aria-label="Main navigation"
     >
       <div class="container">
-        <a class="navbar-brand  d-flex align-items-center" href="../../index.html"
+        <a
+          class="navbar-brand d-flex align-items-center"
+          href="../../index.html"
           ><img
             src="../images/pcm-logo.png"
             alt="PCM Employment Agencies logo"
             height="80px"
+            class="logo"
             onerror="
               this.replaceWith(
                 document.createTextNode('PCM Employment Agencies'),
               )
             "
-        /> <span class="d-lg-flex d-none align-items-center"><span id="PCM">PCM</span> &nbsp; <span id="PCM1">EMPLOYMENT AGENCIES</span></span></a>
+          />
+          <span class="d-lg-flex  align-items-center"
+            ><span id="PCM">PCM</span> 
+            <span id="PCM1">EMPLOYMENT AGENCIES</span></span
+          ></a
+        >
         <button
           class="navbar-toggler"
           data-bs-toggle="offcanvas"
@@ -83,13 +105,13 @@
               <li class="nav-item">
                 <a class="nav-link" href="industries.html">Industries</a>
               </li>
-             
+
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
             <a class="btn btn-gold ms-lg-3 mt-3 mt-lg-0" href="contact.html"
-              >Enquire Now</a
+              ><i class="fa-solid fa-phone"></i> +65 9684 9626</a
             >
           </div>
         </div>
@@ -98,7 +120,7 @@
     <main id="top">
       <section
         class="page-hero ph"
-        style="--img: url('../images/services/services.png')"
+        style="--img: url(&quot;../images/services/services.png&quot;)"
       >
         <div class="overlay"></div>
         <div class="container position-relative">
@@ -112,7 +134,7 @@
       </section>
       <section class="section">
         <div class="container">
-          <div class="section-head reveal" style="height: 150px;">
+          <div class="section-head reveal" style="height: 150px">
             <span class="eyebrow">Section 1</span>
             <h2>Employment and Pass Application Support</h2>
           </div>
@@ -125,7 +147,10 @@
                   Support with work permit application coordination for eligible
                   foreign workers.
                 </p>
-                <a href="./contact.html"> <span class="home-learnmore">Enquire <i class="bi bi-arrow-right ms-3"></i></span></a>
+                <a href="./contact.html">
+                  <span class="home-learnmore"
+                    >Enquire <i class="bi bi-arrow-right ms-3"></i></span
+                ></a>
               </div>
             </div>
             <div class="col-md-6 reveal">
@@ -136,7 +161,10 @@
                   Assistance for employers hiring mid-skilled staff under the S
                   Pass.
                 </p>
-                <a href="./contact.html"> <span class="home-learnmore">Enquire <i class="bi bi-arrow-right ms-3"></i></span></a>
+                <a href="./contact.html">
+                  <span class="home-learnmore"
+                    >Enquire <i class="bi bi-arrow-right ms-3"></i></span
+                ></a>
               </div>
             </div>
             <div class="col-md-6 reveal">
@@ -144,7 +172,10 @@
                 <i class="bi bi-file-earmark-check"></i>
                 <h3>Employment Pass</h3>
                 <p>Guidance for professionals, managers and executives.</p>
-               <a href="./contact.html"> <span class="home-learnmore">Enquire <i class="bi bi-arrow-right ms-3"></i></span></a>
+                <a href="./contact.html">
+                  <span class="home-learnmore"
+                    >Enquire <i class="bi bi-arrow-right ms-3"></i></span
+                ></a>
               </div>
             </div>
             <div class="col-md-6 reveal">
@@ -154,7 +185,10 @@
                 <p>
                   Documentation help for students and entry pass applicants.
                 </p>
-                <a href="./contact.html"> <span class="home-learnmore">Enquire <i class="bi bi-arrow-right ms-3"></i></span></a>
+                <a href="./contact.html">
+                  <span class="home-learnmore"
+                    >Enquire <i class="bi bi-arrow-right ms-3"></i></span
+                ></a>
               </div>
             </div>
           </div>
@@ -170,7 +204,7 @@
         <div class="container">
           <div class="row g-5 align-items-center">
             <div class="col-lg-6 reveal">
-              <div class="section-head reveal" style="height: 120px;">
+              <div class="section-head reveal" style="height: 120px">
                 <span class="eyebrow">Section 2</span>
                 <h2>International Recruitment</h2>
               </div>
@@ -187,7 +221,9 @@
             <div class="col-lg-6 reveal">
               <div
                 class="photo ph"
-                style="--img: url('../images/services/requirement.jpg')"
+                style="
+                  --img: url(&quot;../images/services/requirement.jpg&quot;);
+                "
                 role="img"
                 aria-label="International workforce"
               ></div>
@@ -197,36 +233,36 @@
       </section>
       <section class="section">
         <div class="container">
-          <div class="section-head reveal" style="height: 150px;">
+          <div class="section-head reveal" style="height: 150px">
             <span class="eyebrow">Section 3</span>
             <h2>Recruitment Coordination</h2>
           </div>
           <div class="row g-4">
-            <div class="col-md-6 col-lg-4 reveal" style="height: 150px;" >
+            <div class="col-md-6 col-lg-4 reveal" style="height: 150px">
               <div class="step">
                 <b>1</b>
                 <h3>Candidate coordination</h3>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 reveal" style="height: 150px;">
+            <div class="col-md-6 col-lg-4 reveal" style="height: 150px">
               <div class="step">
                 <b>2</b>
                 <h3>Documentation assistance</h3>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 reveal" style="height: 150px;">
+            <div class="col-md-6 col-lg-4 reveal" style="height: 150px">
               <div class="step">
                 <b>3</b>
                 <h3>Employer communication</h3>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 reveal" style="height: 150px;">
+            <div class="col-md-6 col-lg-4 reveal" style="height: 150px">
               <div class="step">
                 <b>4</b>
                 <h3>Application-process coordination</h3>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 reveal" style="height: 150px;">
+            <div class="col-md-6 col-lg-4 reveal" style="height: 150px">
               <div class="step">
                 <b>5</b>
                 <h3>Recruitment follow-up</h3>
@@ -236,7 +272,7 @@
         </div>
       </section>
       <section class="cta-band">
-        <div class="container text-center reveal" style="height: 150px;">
+        <div class="container text-center reveal" style="height: 150px">
           <h2>Need a Service? Talk to Us.</h2>
           <p>
             Tell us about your workforce requirements and our team will respond.

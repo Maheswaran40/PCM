@@ -9,6 +9,13 @@
       content="Learn about PCM Employment Agencies Pte. Ltd., our mission, approach and values."
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
@@ -21,6 +28,11 @@
       rel="stylesheet"
     />
     <link href="../style/style.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="../images/pcm-fav.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <div class="progress-bar-top" id="scrollProgress"></div>
@@ -28,10 +40,12 @@
       <div
         class="container d-flex justify-content-between align-items-center gap-2"
       >
-        <span
+        <span class="header"
           ><i class="bi bi-geo-alt"></i> Singapore employment &amp; recruitment
           services</span
-        ><a href="contact.html">Contact Us <i class="bi bi-arrow-right"></i></a>
+        ><a href="" class="text-light header"
+          ><i class="fa-regular fa-envelope"></i> Mail Us
+        </a>
       </div>
     </div>
     <nav
@@ -40,17 +54,24 @@
       aria-label="Main navigation"
     >
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="../../index.html"
+        <a
+          class="navbar-brand d-flex align-items-center"
+          href="../../index.html"
           ><img
             src="../images/pcm-logo.png"
             alt="PCM Employment Agencies logo"
             height="80px"
+            class="logo"
             onerror="
               this.replaceWith(
                 document.createTextNode('PCM Employment Agencies'),
               )
             "
-        /><span class="d-lg-flex d-none align-items-center"><span id="PCM">PCM</span> &nbsp; <span id="PCM1">EMPLOYMENT AGENCIES</span></span> </a>
+          /><span class="d-lg-flex align-items-center"
+            ><span id="PCM">PCM</span> 
+            <span id="PCM1">EMPLOYMENT AGENCIES</span></span
+          >
+        </a>
         <button
           class="navbar-toggler"
           data-bs-toggle="offcanvas"
@@ -83,13 +104,13 @@
               <li class="nav-item">
                 <a class="nav-link" href="industries.html">Industries</a>
               </li>
-             
+
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
             <a class="btn btn-gold ms-lg-3 mt-3 mt-lg-0" href="contact.html"
-              >Enquire Now</a
+              ><i class="fa-solid fa-phone"></i> +65 9684 9626</a
             >
           </div>
         </div>
@@ -98,7 +119,7 @@
     <main id="top">
       <section
         class="page-hero ph"
-        style="--img: url('../images/about/aboutBanner.png')"
+        style="--img: url(&quot;../images/about/aboutBanner.png&quot;)"
       >
         <div class="overlay"></div>
         <div class="container position-relative">
@@ -110,7 +131,7 @@
           </p>
         </div>
       </section>
-      <section class="section pb-0" >
+      <section class="section pb-0">
         <div class="container">
           <div class="row g-5">
             <div class="col-lg-5 reveal" id="top-grid">
@@ -136,81 +157,74 @@
         </div>
       </section>
 
-  
-<section class="section mission-vision-section">
-  <div class="container">
+      <section class="section mission-vision-section">
+        <div class="container">
+          <div
+            class="text-center mb-5 reveal"
+            style="margin-bottom: 0% !important"
+          >
+            <span class="eyebrow">WHO WE ARE</span>
+            <h2 class="section-title">Our Purpose. <span>Our Future.</span></h2>
+            <p class="section-subtitle">
+              Creating meaningful connections between employers and talent.
+            </p>
+          </div>
 
-    <div class="text-center mb-5 reveal" style="margin-bottom: 0% !important;">
-      <span class="eyebrow">WHO WE ARE</span>
-      <h2 class="section-title">
-        Our Purpose. <span>Our Future.</span>
-      </h2>
-      <p class="section-subtitle">
-        Creating meaningful connections between employers and talent.
-      </p>
-    </div>
+          <div class="row g-4">
+            <!-- Mission Card -->
+            <div class="col-md-6 reveal">
+              <div class="mv-card mission-card">
+                <div class="mv-top">
+                  <span class="mv-number">01</span>
+                  <div class="mv-icon">
+                    <i class="bi bi-bullseye"></i>
+                  </div>
+                </div>
 
-    <div class="row g-4">
+                <div class="mv-line"></div>
 
-      <!-- Mission Card -->
-      <div class="col-md-6 reveal">
-        <div class="mv-card mission-card">
+                <h3>Our Mission</h3>
 
-          <div class="mv-top">
-            <span class="mv-number">01</span>
-            <div class="mv-icon">
-              <i class="bi bi-bullseye"></i>
+                <p>
+                  To connect businesses with dependable workers through clear
+                  communication and well-organised recruitment support.
+                </p>
+
+                <div class="mv-footer">
+                  <span>Connecting People</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Vision Card -->
+            <div class="col-md-6 reveal">
+              <div class="mv-card vision-card">
+                <div class="mv-top">
+                  <span class="mv-number">02</span>
+                  <div class="mv-icon">
+                    <i class="bi bi-globe-asia-australia"></i>
+                  </div>
+                </div>
+
+                <div class="mv-line"></div>
+
+                <h3>Our Vision</h3>
+
+                <p>
+                  To be a trusted bridge between employers in Singapore and
+                  talent across the region.
+                </p>
+
+                <div class="mv-footer">
+                  <span>Building Global Trust</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="mv-line"></div>
-
-          <h3>Our Mission</h3>
-
-          <p>
-            To connect businesses with dependable workers through clear
-            communication and well-organised recruitment support.
-          </p>
-
-          <div class="mv-footer">
-            <span>Connecting People</span>
-            <i class="bi bi-arrow-up-right"></i>
-          </div>
-
         </div>
-      </div>
-
-      <!-- Vision Card -->
-      <div class="col-md-6 reveal">
-        <div class="mv-card vision-card">
-
-          <div class="mv-top">
-            <span class="mv-number">02</span>
-            <div class="mv-icon">
-              <i class="bi bi-globe-asia-australia"></i>
-            </div>
-          </div>
-
-          <div class="mv-line"></div>
-
-          <h3>Our Vision</h3>
-
-          <p>
-            To be a trusted bridge between employers in Singapore and
-            talent across the region.
-          </p>
-
-          <div class="mv-footer">
-            <span>Building Global Trust</span>
-            <i class="bi bi-arrow-up-right"></i>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+      </section>
 
       <section class="section mb-5">
         <div class="container">
@@ -218,13 +232,13 @@
             <div class="col-lg-6 reveal">
               <div
                 class="photo ph"
-                style="--img: url('../images/about/approach.png')"
+                style="--img: url(&quot;../images/about/approach.png&quot;)"
                 role="img"
                 aria-label="Employers and international workers"
               ></div>
             </div>
             <div class="col-lg-6 reveal pt-lg-0 pt-5">
-              <div class="section-head reveal" style="height: 100px;">
+              <div class="section-head reveal" style="height: 100px">
                 <span class="eyebrow">Approach</span>
                 <h2>Our Approach to Recruitment</h2>
               </div>
@@ -239,10 +253,9 @@
         </div>
       </section>
 
-      
-      <section class="section bg-navy text-white" >
+      <section class="section bg-navy text-white">
         <div class="container">
-          <div class="section-head reveal" style="height: 150px;">
+          <div class="section-head reveal" style="height: 150px">
             <span class="eyebrow">Values</span>
             <h2>What Guides Us</h2>
           </div>
