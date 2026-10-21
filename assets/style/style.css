@@ -63,7 +63,9 @@ a {
   }
 }
 
-
+.header{
+  font-size:15px ;
+}
 .progress-bar-top {
   position: fixed;
   top: 0;
@@ -222,6 +224,12 @@ a {
 .route circle {
   fill: var(--gold);
 }
+#ravanan{
+  color: white;
+  filter: opacity(3%);
+  position: sticky;
+  bottom: 20px;
+}
 @keyframes dash {
   to {
     stroke-dashoffset: -600;
@@ -243,6 +251,20 @@ a {
 .section-head {
   text-align: center;
   height: 200px;
+}
+.social-link{
+width: 70px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.social-link i{
+    color: white;
+    font-size: 20px;
+}
+.social-link i:hover{
+color: var(--gold);
+
 }
 
 .gold-line {
